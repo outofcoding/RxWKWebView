@@ -1,0 +1,6 @@
+framework module RxWKWebView {
+  umbrella header "RxWKWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

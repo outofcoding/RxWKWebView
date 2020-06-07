@@ -1,0 +1,32 @@
+{
+  "name": "RxWKWebView",
+  "version": "0.1.0",
+  "summary": "RxWKWebView is RxSwift wrapper for WKWebView.",
+  "description": "RxWKWebView is RxSwift wrapper for WKWebView.",
+  "homepage": "https://github.com/outofcoding/RxWKWebView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "outofcoding": "outofcoding@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/outofcoding/RxWKWebView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxWKWebView/Classes/**/*",
+  "swift_versions": "5.0",
+  "dependencies": {
+    "RxSwift": [
+      "~> 5.0"
+    ],
+    "RxCocoa": [
+      "~> 5.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
