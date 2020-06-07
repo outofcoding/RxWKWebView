@@ -1,6 +1,0 @@
-framework module Pods_RxWKWebView_Tests {
-  umbrella header "Pods-RxWKWebView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
