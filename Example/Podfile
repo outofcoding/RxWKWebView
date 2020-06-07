@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxWKWebView_Example' do
+  pod 'RxWKWebView', :path => '../'
+
+  target 'RxWKWebView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
