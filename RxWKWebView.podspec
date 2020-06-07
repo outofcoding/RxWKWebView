@@ -12,6 +12,24 @@ Pod::Spec.new do |s|
   s.summary          = 'RxWKWebView is RxSwift wrapper for WKWebView.'
   s.description      = <<-DESC
   RxWKWebView is RxSwift wrapper for WKWebView.
+  subscribe webView.rx.navigationAction.
+  
+  webview.rx.navigationAction
+      .subscribe(onNext: { action in
+          switch action {
+          case let .navigationAction(webView, action, handler):
+              print("navigationAction. action = \(action)")
+              print("navigationAction. target = \(webView.url?.absoluteString ?? "<nil>")")
+              handler(WKNavigationActionPolicy.allow)
+          case let .didStart(webView, navigation):
+              print("start web page. action = \(navigation)")
+              print("start web page. target = \(webView.url?.absoluteString ?? "<nil>")")
+          case let .didFinish(webView, navigation):
+              print("end web page. action = \(navigation)")
+              print("end web page. target = \(webView.url?.absoluteString ?? "<nil>")")
+          }
+      })
+      .disposed(by: disposeBag)
   DESC
 
   s.homepage         = 'https://github.com/outofcoding/RxWKWebView'
